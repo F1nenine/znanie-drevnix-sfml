@@ -1,61 +1,44 @@
-#ifndef Графильница 
-#define Графильница
+п»ї#ifndef Р“СЂР°С„РёР»СЊРЅРёС†Р° 
+#define Р“СЂР°С„РёР»СЊРЅРёС†Р°
+#include "Р’Рµ_РєСЂРµСЃС‚_РєСЂРµСЃС‚.h"
 
-#include "Ве_крест_крест.h"
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/Audio.hpp>
+#include <SFML/Network.hpp>
+#include <SFML/System.hpp>
 
-#include "SFML/Graphics.hpp"
-#include "SFML/Audio.hpp"
-#include "SFML/Network.hpp"
-#include "SFML/System.hpp"
-#include "SFML/Window.hpp"
+#define СЃРї sf
 
-#define сп sf
+//// РћРєРѕРЅРЅРѕРµ С‚РІРѕСЂРµРЅРёРµ
 
-// Оконное творение
-#define ОкноСозерцанья RenderWindow
-#define ОконныйВид VideoMode
-#define ОконныйВариант WindowStyle
-#define Окно Window
-#define Плоть Context
+#define РѕС‚РєСЂС‹С‚Рѕ isOpen
+#define РѕС‡РёСЃС‚РёС‚СЊ clear
+#define СЏРІРёС‚СЊ display
+#define Р·Р°РєСЂС‹С‚СЊ close
+#define РѕРїСЂРѕСЃРЎРѕР±С‹С‚РёСЏ pollEvent
 
-// Зрительные образы  
-#define Образопись Texture
-#define Ликодвижный Sprite
-#define Письмовица Font
-#define Письмопись Text
-#define ОбразоСложение Shape
-#define Круголикий CircleShape
-#define Четыреугольник RectangleShape
-#define Многоликий ConvexShape
+РІРЅРµРґСЂРёС‚СЊ С…СѓС‚РѕСЂ СЃРї;
+РІРЅРµРґСЂРёС‚СЊ РћРєРЅРѕРЎРѕР·РµСЂС†Р°РЅСЊСЏ = СЃРї::RenderWindow;
+РІРЅРµРґСЂРёС‚СЊ РЎРѕР±С‹С‚РёРµ = СЃРї::Event;
+РІРЅРµРґСЂРёС‚СЊ РћРєРѕРЅРЅС‹Р№Р’РёРґ = СЃРї::VideoMode;
 
-// Цветословие
-#define Цвет Color
-#define ЦветоСмешение BlendMode
-#define ЦветоПреставление ColorTransform
 
-// Звукословие
-#define Звукословие Sound
-#define Звуковидица SoundBuffer
-#define Музыкословие Music
-#define Слухословие AudioDevice
-#define Слухопространство SoundSpace
+#define РѕС‚РєСЂС‹С‚Рѕ isOpen
+#define РѕС‡РёСЃС‚РёС‚СЊ clear
+#define СЏРІРёС‚СЊ display
+#define Р·Р°РєСЂС‹С‚СЊ close
+#define РѕРїСЂРѕСЃРЎРѕР±С‹С‚РёСЏ pollEvent
+#define РџР»РѕС‚СЊ Context;
 
-// Временословие  
-#define Часомерие Clock
-#define Время Time
-#define Миговость Instant
-
-// Ввододействие
-#define Событие Event
-#define Клавишеведение Keyboard
-#define Мышеведение Mouse
-#define Джойстиковедение Joystick
-#define Сенсороведение Sensor
-
-// Пространстводействие
-#define Напровление Vector2
-#define Прямоугол Rect
-#define Преображень Transform
-#define Видосвод View
+// Р—СЂРёС‚РµР»СЊРЅС‹Рµ РѕР±СЂР°Р·С‹  
+РІРЅРµРґСЂРёС‚СЊ РћР±СЂР°Р·РѕРїРёСЃСЊ = Texture;
+РІРЅРµРґСЂРёС‚СЊ Р›РёРєРѕРґРІРёР¶РЅС‹Р№ = Sprite;
+РІРЅРµРґСЂРёС‚СЊ РџРёСЃСЊРјРѕРІРёС†Р° = Font;
+РІРЅРµРґСЂРёС‚СЊ РџРёСЃСЊРјРѕРїРёСЃСЊ = Text;
+РІРЅРµРґСЂРёС‚СЊ РћР±СЂР°Р·РѕРЎР»РѕР¶РµРЅРёРµ = Shape;
+РІРЅРµРґСЂРёС‚СЊ РљСЂСѓРіРѕР»РёРєРёР№ = CircleShape;
+РІРЅРµРґСЂРёС‚СЊ Р§РµС‚С‹СЂРµСѓРіРѕР»СЊРЅРёРє = RectangleShape;
+РІРЅРµРґСЂРёС‚СЊ РњРЅРѕРіРѕР»РёРєРёР№ = ConvexShape;
 
 #endif
