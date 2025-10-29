@@ -9,26 +9,19 @@
 #include <SFML/System.hpp>
 
 #define сп sf
-
-//// Оконное творение
-
-#define открыто isOpen
-#define очистить clear
-#define явить display
-#define закрыть close
-#define опросСобытия pollEvent
-
 внедрить хутор сп;
+
+// Оконное творение
 внедрить ОкноСозерцанья = сп::RenderWindow;
 внедрить Событие = сп::Event;
 внедрить ОконныйВид = сп::VideoMode;
 
-
 #define открыто isOpen
 #define очистить clear
 #define явить display
 #define закрыть close
 #define опросСобытия pollEvent
+
 #define Плоть Context;
 
 // Зрительные образы  
